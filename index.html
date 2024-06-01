@@ -1,56 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
     <header>
-        <h1>Portofolio Saya</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#home">Beranda</a></li>
-            <li><a href="#projects">Proyek</a></li>
-            <li><a href="#about">Tentang Saya</a></li>
-            <li><a href="#contact">Kontak</a></li>
-        </ul>
-    </nav>
-
     <section id="home">
-        <h2>Selamat Datang di Portofolio Saya!</h2>
-        <p>Saya adalah seorang pengembang web yang berfokus pada menciptakan pengalaman pengguna yang menarik dan fungsional.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Proyek Saya</h2>
-        <div class="project">
-            <h3>Proyek 1</h3>
-            <p>Deskripsi proyek 1.</p>
-        </div>
-        <div class="project">
-            <h3>Proyek 2</h3>
-            <p>Deskripsi proyek 2.</p>
+        <div class="intro">
+            <h1>Hello, I'm Zildan</h1>
+            <p>Junior Pentester | Security Operation Center | Content Creator</p>
+            <div class="social-icons">
+                <a href="https://facebook.com/zildan.z.3" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/zildan1337" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@zildansecurity" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
     </section>
-
     <section id="about">
-        <h2>Tentang Saya</h2>
-        <p>Sedikit cerita tentang diri saya dan minat saya dalam pengembangan web.</p>
+        <h2>About Me</h2>
+        <p>Saya adalah pendiri komunitas Jawa Barat Cyber yang turun ke dunia cyber security pada saat SMP dan mulai fokus pada saat kelas 2 SMK sudah mendapatkan pekerjaan freelance sebagai Pentester di Diskominfo Tsikmalayakota.</p>
     </section>
-
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="portfolio-items">
+            <!-- Add portfolio items here -->
+            <div class="item">
+                <img src="SIEM.png" alt="Project 1">
+                <h3>Wazuh Siem Tasikmalayakota</h3>
+                <p>Saya berpatisipasi dalam melakukan konfigurasi dan installasi pada Wazuh milik tasikmalayakota seperti Detection webshell, Active Response, dashboard costum, Dan lain-nya.</p>
+            </div>
+            <div class="item">
+                <img src="Tools.png" alt="Project 2">
+                <h3>Tools Scanning anomaly file</h3>
+                <p>Saya memiliki sebuah program yang dimana bisa memundahkan anda untuk mencari sebuah file anomaly terutama seperti shellbackdoor, landing page judi online, dan melihat cronjob yang mencurigakan. Script ini masih dalam tahap pengembangan dan akan terus di update.</p>
+            </div>
+            <div class="item">
+                <img src="Youtube.png" alt="Project 3">
+                <h3>Youtube Hacking</h3>
+                <p>Saya membuat Youtube dengan hidden gems atau ilmu yang tersembunyi yang berhubungan dengan hacking terutama Pentest.</p>
+            </div>
+        </div>
+    </section>
     <section id="contact">
-        <h2>Kontak Saya</h2>
-        <p>Email: example@example.com</p>
-        <p>Telepon: 123-456-7890</p>
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
-
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 Zildan. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/zildan.z.3" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/zildan1337" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@zildansecurity" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
-
 </html>
