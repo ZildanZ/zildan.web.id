@@ -160,28 +160,23 @@ footer .social-icons a:hover {
     color: #fff;
 }
 
-.certificate-slider {
+.cert-grid {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.certificate-slider::-webkit-scrollbar {
-    display: none; /* biar clean */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
 }
 
 .cert-item {
-    flex: 0 0 80%; /* tampil 1 item penuh di HP */
-    max-width: 500px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     padding: 1rem;
-    scroll-snap-align: center;
+    flex: 1 1 calc(33.333% - 2rem);
+    max-width: 400px;
     transition: transform 0.3s;
+    text-align: center;
 }
 
 .cert-item:hover {
@@ -194,7 +189,6 @@ footer .social-icons a:hover {
     border-radius: 10px;
     margin-bottom: 1rem;
 }
-
 /* Tombol slider */
 .slider-controls {
     margin-top: 1rem;
