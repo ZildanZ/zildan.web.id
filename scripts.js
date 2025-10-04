@@ -7,3 +7,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+const slider = document.querySelector('.certificate-slider');
+const prevBtnCert = document.getElementById('prevCert');
+const nextBtnCert = document.getElementById('nextCert');
+
+nextBtnCert.addEventListener('click', () => {
+    slider.scrollBy({ left: 500, behavior: 'smooth' });
+});
+
+prevBtnCert.addEventListener('click', () => {
+    slider.scrollBy({ left: -500, behavior: 'smooth' });
+});
