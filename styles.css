@@ -40,13 +40,50 @@ section {
 }
 
 #home {
-    padding: 5rem 0;
+    padding: 5rem 1rem;
     background: linear-gradient(90deg, #007bff, #ff0000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro {
-    max-width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1000px;
     margin: 0 auto;
+    flex-wrap: wrap; /* biar responsif di HP */
+}
+
+.profile-photo {
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+.profile-photo img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255,255,255,0.3);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.intro-text {
+    flex: 2 1 500px;
+    text-align: left;
+    color: #fff;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .social-icons {
@@ -160,23 +197,28 @@ footer .social-icons a:hover {
     color: #fff;
 }
 
-.cert-grid {
+.certificate-slider {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 2rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.certificate-slider::-webkit-scrollbar {
+    display: none; /* biar clean */
 }
 
 .cert-item {
-    background: rgba(255, 255, 255, 0.1);
+    flex: 0 0 80%; /* tampil 1 item penuh di HP */
+    max-width: 500px;
+    background: rgba(255,255,255,0.1);
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     padding: 1rem;
-    flex: 1 1 calc(33.333% - 2rem);
-    max-width: 400px;
+    scroll-snap-align: center;
     transition: transform 0.3s;
-    text-align: center;
 }
 
 .cert-item:hover {
@@ -189,6 +231,7 @@ footer .social-icons a:hover {
     border-radius: 10px;
     margin-bottom: 1rem;
 }
+
 /* Tombol slider */
 .slider-controls {
     margin-top: 1rem;
