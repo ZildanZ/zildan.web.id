@@ -181,45 +181,46 @@ footer .social-icons a:hover {
     color: #ddd;
 }
 #certificates {
-    padding: 3rem 1rem;
-    text-align: center;
-    background: linear-gradient(90deg, #007bff, #ff0000);
-    color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+  background: linear-gradient(90deg, #007bff, #ff0000);
+  color: #fff;
 }
 
 .certificate-slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    gap: 1rem;
-    padding: 1rem;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .certificate-slider::-webkit-scrollbar {
-    display: none; /* biar clean */
+  display: none; /* biar clean */
 }
 
 .cert-item {
-    flex: 0 0 80%; /* tampil 1 item penuh di HP */
-    max-width: 500px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    padding: 1rem;
-    scroll-snap-align: center;
-    transition: transform 0.3s;
+  flex: 0 0 80%; /* tampil 1 item di layar HP */
+  max-width: 500px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  padding: 1rem;
+  scroll-snap-align: center;
+  transition: transform 0.3s;
 }
 
 .cert-item:hover {
-    transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 .cert-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
 }
 
 /* Tombol slider */
