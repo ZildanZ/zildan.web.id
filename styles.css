@@ -40,54 +40,44 @@ section {
 }
 
 #home {
-    padding: 5rem 1rem;
-    background: linear-gradient(90deg, #007bff, #ff0000);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: left;
 }
 
-.intro {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-    flex-wrap: wrap; /* biar responsif di HP */
+.home-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap; /* biar responsif */
 }
 
-.profile-photo {
-    flex: 1 1 250px;
-    text-align: center;
-}
-
-.profile-photo img {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid rgba(255,255,255,0.3);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
-
-.intro-text {
-    flex: 2 1 500px;
-    text-align: left;
-    color: #fff;
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .intro-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .intro-text p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #eee;
 }
 
-.social-icons {
-    margin-top: 1rem;
+.social-icons a {
+  margin-right: 10px;
+  color: white;
+  font-size: 1.3rem;
 }
 
 .social-icons a {
